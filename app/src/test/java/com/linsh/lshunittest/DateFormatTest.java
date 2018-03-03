@@ -1,5 +1,7 @@
 package com.linsh.lshunittest;
 
+import com.linsh.lshunittest.util.TestUtils;
+
 import org.junit.Test;
 
 import java.text.SimpleDateFormat;

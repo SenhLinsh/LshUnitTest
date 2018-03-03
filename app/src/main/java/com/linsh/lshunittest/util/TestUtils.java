@@ -1,4 +1,4 @@
-package com.linsh.lshunittest;
+package com.linsh.lshunittest.util;
 
 /**
  * <pre>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="30dp">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addAnonymousInnerClassInstance"
+        android:text="添加有引用匿名内部类实例"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addAnonymousInnerClassInstance2"
+        android:text="添加无引用匿名内部类实例"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addInnerClassInstance"
+        android:text="添加内部类实例"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addNormalInstance"
+        android:text="添加静态内部类实例"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addReferencedNormalInstance"
+        android:text="添加被引用的静态内部类实例"/>
+
+    <Button
+        android:onClick="gc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GC"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="checkCount"
+        android:text="检查对象数"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clear"
+        android:text="清除所有对象"/>
+
+</LinearLayout>
