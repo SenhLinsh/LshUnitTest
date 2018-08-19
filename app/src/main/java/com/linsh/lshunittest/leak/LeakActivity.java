@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 import com.linsh.lshunittest.R;
 import com.linsh.lshunittest.util.LeakUtils;
-import com.linsh.lshutils.others.RandomUtils;
+import com.linsh.utilseverywhere.RandomUtils;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -38,7 +38,7 @@ public class LeakActivity extends AppCompatActivity {
     public void addAnonymousInnerClassInstance(View view) {
         for (int i = 0; i < 1000; i++) {
             Runnable obj = new Runnable() {
-                private String str = RandomUtils.getRandomNumbersAndLetters(100);
+                private String str = RandomUtils.getNumberAndLetter(100);
                 private Activity mActivity;
 
                 @Override
@@ -53,7 +53,7 @@ public class LeakActivity extends AppCompatActivity {
     public void addAnonymousInnerClassInstance2(View view) {
         for (int i = 0; i < 1000; i++) {
             LeakUtils.observeObject(new Runnable() {
-                private String str = RandomUtils.getRandomNumbersAndLetters(100);
+                private String str = RandomUtils.getNumberAndLetter(100);
 
                 @Override
                 public void run() {
@@ -98,7 +98,7 @@ public class LeakActivity extends AppCompatActivity {
 
     public static class MyInnerRunnable implements Runnable {
 
-        private String str = RandomUtils.getRandomNumbersAndLetters(100);
+        private String str = RandomUtils.getNumberAndLetter(100);
 
         @Override
         public void run() {
@@ -107,7 +107,7 @@ public class LeakActivity extends AppCompatActivity {
 
     public static class MyRunnable implements Runnable {
 
-        private String str = RandomUtils.getRandomNumbersAndLetters(100);
+        private String str = RandomUtils.getNumberAndLetter(100);
 
         @Override
         public void run() {
